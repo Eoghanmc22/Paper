@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-MAVEN_OPTS= -XX:+TieredCompilation -XX:TieredStopAtLevel=1
+MAVEN_OPTS=-XX:+TieredCompilation -XX:TieredStopAtLevel=1
 export PATH=/c/opt/apache-maven-3.6.0/bin:$PATH
 export PATH=/c/Program\ Files/Java/jdk1.8.0_191/bin:$PATH
 # resolve shell-specifics
