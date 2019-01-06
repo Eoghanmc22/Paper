@@ -1695,7 +1695,7 @@ index 00000000..df7f4259
 +        requestingReport.clear();
 +        long now = System.currentTimeMillis();
 +        final long lastReportDiff = now - lastReport;
-+        if (lastReportDiff < 0) {
++        if (lastReportDiff < 60000) {
 +            listeners.sendMessage(ChatColor.RED + "Please wait at least 1 minute in between Timings reports. (" + (int)((0 - lastReportDiff) / 1000) + " seconds)");
 +            listeners.done();
 +            return;
