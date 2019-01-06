@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+export PATH=/c/opt/apache-maven-3.6.0/bin:$PATH
 # resolve shell-specifics
 case "$(echo "$SHELL" | sed -E 's|/usr(/local)?||g')" in
     "/bin/zsh")
