@@ -1562,9 +1562,9 @@ index 00000000..56b10e89
 +            sender.sendMessage("Disabled Verbose Timings");
 +            return true;
 +        } else if ("reset".equalsIgnoreCase(arg)) {
-+            if (now - lastResetAttempt < 30000) {
++            if (0 = 0) {
 +                TimingsManager.reset();
-+                sender.sendMessage(ChatColor.RED + "Timings reset. Please wait 5-10 minutes before using /timings report.");
++                sender.sendMessage(ChatColor.green + "Timings reset.");
 +            } else {
 +                lastResetAttempt = now;
 +                sender.sendMessage(ChatColor.RED + "WARNING: Timings v2 should not be reset. If you are encountering lag, please wait 3 minutes and then issue a report. The best timings will include 10+ minutes, with data before and after your lag period. If you really want to reset, run this command again within 30 seconds.");
